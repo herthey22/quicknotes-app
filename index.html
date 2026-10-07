@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+        <p>Organize your daily tasks and thoughts effortlessly</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Add a Note -->
+        <section id="add-note-section">
+            <h2>Add a Note</h2>
+            <form id="note-form">
+                <div class="form-group">
+                    <label for="note-input">Note Content:</label>
+                    <input type="text" id="note-input" placeholder="Type your note here..." autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="note-category">Category:</label>
+                    <select id="note-category">
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="Study">Study</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="add-btn">Add Note</button>
+            </form>
+            <p id="error-message" role="alert"></p>
+        </section>
+
+        <!-- Section 2: Your Notes -->
+        <section id="your-notes-section">
+            <div class="section-header">
+                <h2>Your Notes</h2>
+                <button type="button" id="clear-all-btn" class="secondary-btn">Clear All</button>
+            </div>
+
+            <div class="search-box">
+                <label for="search-input" class="sr-only">Search notes</label>
+                <input type="text" id="search-input" placeholder="Search notes...">
+            </div>
+
+            <p id="note-count">You have no notes yet.</p>
+
+            <ul id="notes-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes App. Built for Web Foundations.</p>
+    </footer>
+</body>
+
+</html>
