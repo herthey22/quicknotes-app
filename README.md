@@ -15,4 +15,4 @@ QuickNotes is a lightweight, responsive web application designed for creating, o
 
 1. Clone or download this repository:
    ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/quicknotes-app.git](https://github.com/YOUR_GITHUB_USERNAME/quicknotes-app.git)
+   git clone https://github.com/herthey22/quicknotes-app.git
